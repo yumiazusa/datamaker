@@ -17,7 +17,7 @@ class CreateStudentsTable extends Migration
          /**
          * 学生表
          */
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('lv_students_students', function (Blueprint $table) {
             $table->comment = '学生表';
             $table->increments('id')->comment('学生ID');
             $table->string('name',100)->default('')->comment('学生姓名');
